@@ -2,7 +2,7 @@
 
 A simple embedded Car Parking System project developed using the STM32F103C8T6 (Bluepill) microcontroller. The system tracks the number of cars entering and exiting a parking lot using IR sensors and displays the count on a TM1637 4-digit 7-segment display.
 
-## 📌 Features
+
 
 - 🔢 Displays number of available parking slots using a TM1637 display
 - 🔍 IR sensors for detecting car entry and exit
@@ -48,10 +48,13 @@ A simple embedded Car Parking System project developed using the STM32F103C8T6 (
 
 ## 📁 Project Structure
 
-CarParkingSystem/
-├── CarParkingSystem.uvprojx # Keil project file
-├── main.c # Application logic
-├── tm1637.c / tm1637.h # TM1637 driver functions
-├── delay.c / delay.h # Millisecond delay utilities
-├── stm32f10x_it.c # Interrupt handlers
-└── README.md # This file
+project/
+├── src/
+│   ├── main.c
+│   ├── gpio.c
+│   └── display.c
+├── include/
+│   ├── gpio.h
+│   └── display.h
+├── README.md
+└── Makefile
