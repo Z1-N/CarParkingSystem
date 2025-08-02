@@ -1,0 +1,6 @@
+../Core/Src/Parking.c:24:5:Car_Entry	3
+../Core/Src/Parking.c:36:5:Car_Exit	3
+../Core/Src/Parking.c:49:7:convertNumberToString	3
+../Core/Src/Parking.c:67:6:Display_Number	1
+../Core/Src/Parking.c:73:7:Display_FULL	2
+../Core/Src/Parking.c:93:8:Display_Startup	1

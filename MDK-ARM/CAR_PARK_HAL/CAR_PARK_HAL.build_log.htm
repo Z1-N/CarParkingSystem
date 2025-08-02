@@ -1,0 +1,86 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.41.0.0
+Copyright (C) 2024 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Eltayib Yousif, UTM, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.41.0.0
+Toolchain Path:  C:\Users\altay\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.22
+Assembler:       Armasm.exe V6.22
+Linker/Locator:  ArmLink.exe V6.22
+Library Manager: ArmAr.exe V6.22
+Hex Converter:   FromElf.exe V6.22
+CPU DLL:         SARMCM3.DLL V5.41.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.3.0.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+C:\Users\altay\OneDrive\Desktop\CAR_PARK_HAL\MDK-ARM\CAR_PARK_HAL.uvprojx
+Project File Date:  01/22/2025
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.22', folder: 'C:\Users\altay\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'CAR_PARK_HAL'
+Note: source file '../Core/Src/main.c' - object file renamed from 'CAR_PARK_HAL\main.o' to 'CAR_PARK_HAL\main_1.o'.
+Note: source file '../Core/Src/system_stm32f1xx.c' - object file renamed from 'CAR_PARK_HAL\system_stm32f1xx.o' to 'CAR_PARK_HAL\system_stm32f1xx_1.o'.
+../Core/Src/sysmem.c(30): error: use of undeclared identifier 'NULL'
+   30 | static uint8_t *__sbrk_heap_end = NULL;
+      |                                   ^
+../Core/Src/sysmem.c(53): error: unknown type name 'ptrdiff_t'
+   53 | void *_sbrk(ptrdiff_t incr)
+      |             ^
+../Core/Src/sysmem.c(63): error: use of undeclared identifier 'NULL'
+   63 |   if (NULL == __sbrk_heap_end)
+      |       ^
+3 errors generated.
+compiling sysmem.c...
+../Core/Src/syscalls.c(24): error: 'sys/stat.h' file not found
+   24 | #include <sys/stat.h>
+      |          ^~~~~~~~~~~~
+1 error generated.
+compiling syscalls.c...
+../Core/Src/Parking.c(11): error: 'gp_drive.h' file not found
+   11 | #include "gp_drive.h"
+      |          ^~~~~~~~~~~~
+1 error generated.
+compiling Parking.c...
+../Core/Src/main.c(96): warning: passing arguments to 'Display_Startup' without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+   96 |   Display_Startup(brightness);
+      |                  ^
+1 warning generated.
+compiling main.c...
+"CAR_PARK_HAL\CAR_PARK_HAL.axf" - 5 Error(s), 1 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS.6.1.0.pack
+                ARM::CMSIS@6.1.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 6.1.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.1.pack
+                Keil::STM32F1xx_DFP@2.4.1
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_CAR_PARK_HAL
+  C:/Users/altay/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include
+  C:/Users/altay/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@6.1.0
+      Include file:  CMSIS/Core/Include/tz_context.h
+Target not created.
+Build Time Elapsed:  00:00:00
+</pre>
+</body>
+</html>
